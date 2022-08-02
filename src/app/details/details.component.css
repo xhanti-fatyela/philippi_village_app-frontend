@@ -1,0 +1,59 @@
+button {
+    border-radius: 10px;
+    background-color: grey;
+    border: none;
+    color: #fff;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+  } 
+  
+   button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  } 
+
+
+
+h2{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+
+    
+}
+
+.backImage {
+    height: 20px;
+    width: 20px;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+h6{
+    text-align:right;
+}
+
+.button{
+    border-radius: 12px;
+}
+img {
+    display: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  h6{
+    text-align: left;
+  }
+
+  img {
+    float: left;
+  }
+  font{
+    float:right;
+  }

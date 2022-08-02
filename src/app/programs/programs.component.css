@@ -1,0 +1,92 @@
+.card {
+    overflow: hidden;
+    border: 0;
+    
+}
+
+.backImage {
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.img-fluid {
+
+    height: 200px;
+    width: 180px;
+}
+
+.card-text {
+    height: 180px;
+    /* width: 160px; */
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    /* padding-right: 2px; */
+}
+
+button {
+    border-radius: 10px;
+    background-color: grey;
+    border: none;
+    color: #fff;
+    text-align: center;
+    width: 80px;
+    height: 30px;
+    transition: all 0.5s;
+    cursor: pointer;
+
+  } 
+  
+   button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  } 
+  
+  
+
+  a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.card-body{
+
+    padding: 0;
+    padding-left: 12px;
+    border-left:1px solid #000;height: 270px;
+   
+}
+
+.image{
+
+    padding-right: 10px;
+    padding-top: 8px;
+}
+
+@media screen 
+  and (min-device-width: 1000px) 
+   { 
+
+ 
+    .card-text {
+        height: 120px;
+     
+    }
+    
+
+
+   
+}
+
+  
+/* .card-text, .card-title, .card-body>button {
+    border-left:1px solid #000;
+
+} */
+/* .row {
+    border-left:1px solid #000;height: 330px;
+} */

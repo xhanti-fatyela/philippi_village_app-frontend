@@ -1,0 +1,30 @@
+
+
+<div class="container" style="margin: 15px;" *ngIf="program">
+  
+    <a routerLink="/programs" class="d-block d-sm-none d-md-none d-lg-none"><img src="/assets/images/backImage-removebg-preview.png" alt="" class="backImage"></a>
+    
+
+    <h2>{{program.title}}</h2>
+    
+    <br>
+    
+    <img src="{{program.picture}}" alt="pict"style ="margin-right: 10px"> 
+    
+    <h6>{{program.details}}</h6>
+    <br>
+    <h4>Vacanies</h4>
+    <h6 style="font-size: 14px;">{{program.vactitle}}</h6>
+    <h6 style="font-size: 14px;">{{program.vacdetails}}</h6>
+     <p style="font-size: 13px; color: gray;">Duration {{program.duration}}</p>
+     <p style="font-size: 13px; color: gray;">Startdate: {{program.startdate}}</p> 
+     <p style="font-size: 13px; color: gray; margin-bottom: 20px;" >Cost: {{program.cost}}</p> 
+     <p style="font-size: 13px;">{{program.requirements}}</p>
+
+     
+    
+     
+    
+     <button><a href="{{program.applylink}}" style="text-decoration: none; color: white;" target="_blank">Apply</a></button>
+  
+</div>

@@ -1,0 +1,136 @@
+<!-- <div class="container">
+    <header class="jumbotron">
+      <p>{{ content }}</p>
+    </header></div> -->
+
+    
+
+
+
+<div class="container" *ngIf="!submitted; else adding;">
+
+    <h5><strong>Program Details</strong></h5>
+
+    <h6>Please add new program</h6>
+
+  <div class="submit-form">
+  <div class="form-group row">
+    <div class="col-25">
+      <label for="title">Title:</label>
+    </div>
+    <div class="col-75">
+      <input type="text" class="title" name="title" placeholder="Program name.." [(ngModel)]="programs.title">
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-25">
+      <label for="subject">Description:</label>
+    </div>
+    <div class="col-75">
+      <input class="description" type= "text" name="description" placeholder="Write something.." style="height:100px" [(ngModel)]="programs.description" required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-25">
+      <label for="subject">Details:</label>
+    </div>
+    <div class="col-75">
+      <input class="details" type="text" name="details" placeholder="Write something.." style="height:100px ; width: 320px;" [(ngModel)]="programs.details" required >
+    </div>
+  </div>
+    <div class="form-group row">
+        <div class="col-25">
+          <label for="fname">Add Image Link:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" class="picture" name="picture" placeholder="image link" [(ngModel)]="programs.picture" required>
+        </div>
+
+  </div>
+
+  <div class="form-group row">
+    <div class="col-25">
+      <label for="subject">Start Date:</label>
+    </div>
+    <div class="col-75">
+      <input class="details" type="text" name="startdate" placeholder="Write something.." style=" width: 320px;" [(ngModel)]="programs.startdate" required >
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-25">
+      <label for="subject">Cost:</label>
+    </div>
+    <div class="col-75">
+      <input class="details" type="text" name="cost" placeholder="Include currency.." style=" width: 320px;" [(ngModel)]="programs.cost" required >
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-25">
+      <label for="subject">Requirements</label>
+    </div>
+    <div class="col-75">
+      <input class="details" type="text" name="requirements" placeholder="if none don't mention" style=" width: 320px;" [(ngModel)]="programs.requirements" required >
+    </div>
+  </div>
+
+  
+
+  <br>
+  
+  <div class="form-group row">
+    <div class="col-25">
+      <label for="country">Vacancies:</label>
+    </div>
+  
+  </div>
+
+  <div class="container">
+    <div class="form-group row">
+      <div class="col-25">
+        <label for="fname">Title of Vacancy:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="vactitle" name="vactitle" placeholder="Title of vacancy.." [(ngModel)]="programs.vactitle">
+      </div>
+      
+    </div>
+    <div class="form-group row">
+      <div class="col-25">
+        <label for="subject">Details of Vacancy:</label>
+      </div>
+      <div class="col-75">
+        <input class="vacdetails" type="text" name="vacdetails" placeholder="Write something.." style="height:50px" [(ngModel)]="programs.vacdetails">
+      </div>
+      <div class="col-25">
+        <label for="fname">Duration:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" class="duration" name="duration" placeholder="Duration.." [(ngModel)]="programs.duration">
+      </div>
+
+      <div class="col-25">
+        <label for="fname">Application Link:</label>
+      </div>
+      <div class="col-75" style="padding-bottom: 10px;">
+        <input type="text" class="applylink" name="applylink" placeholder="link or email" [(ngModel)]="programs.applylink">
+      </div>
+
+
+  
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <button (click)=" savePrograms()">Add Program</button>
+  </div>
+ 
+  </div>
+  </div>
+  </div>
+
+<ng-template #adding>
+    <h6 style="color: green; margin-bottom: 10px; ">Succefully Added !!</h6>
+    <button class="btn btn-secondary btn-block" (click)="toggler()">Add Program</button>
+</ng-template>
+  

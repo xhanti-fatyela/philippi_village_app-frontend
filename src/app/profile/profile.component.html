@@ -1,0 +1,21 @@
+<div class="container" *ngIf="currentUser; else loggedOut">
+    <h1 style="text-align: center;">Profile</h1>
+    <div class="imgwrapper d-flex justify-content-center">
+        <img src="/assets/images/profileimg-removebg-preview.png" alt="profile" class="profile">
+    </div>
+    
+    <header class="jumbotron">
+      <h3 style="text-align:center">
+        <strong >Hello {{ currentUser.username }}</strong>
+      </h3>
+    </header>
+    <br>
+  
+    <p>
+      <strong>Email:</strong>
+      {{ currentUser.email }}
+    </p>
+    
+    
+  </div><ng-template #loggedOut>
+    Please login or register.</ng-template>

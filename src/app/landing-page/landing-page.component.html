@@ -1,0 +1,38 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+      
+          <div class="secLogo container">
+            <img src="/assets/images/sencondlogo.jpg" alt="">
+            <h5>Connecting You To Opportunities</h5>
+          </div>
+          
+          <br>
+      
+      
+          <div class="buttons">
+            <button style="margin: 10px;"(click)="getPrograms()"><span *ngIf="!token">
+              <a routerLink="/programs" >Programs</a>
+            </span></button>
+          <button style="margin: 10px;"><span><a routerLink="/about"> About</a></span></button>
+          </div>
+          <div [class.selected]="token == true" class="message">
+            <small *ngIf="!token" class="text-danger">Please make sure that you logged-in</small>
+
+          </div>
+          
+      
+         <div class="display">
+          <img src="/assets/images/665938931_orig.jpg" alt="" class="image1">
+
+          <img src="/assets/images/top_picture_eng_eswatini.png" alt="" class="image3">
+          
+          <img src="/assets/images/IMG-20210830-WA0057-1024x766.jpg" alt="" class="image2">
+
+          
+         </div>
+      
+        </div>
+      </div>
+</div>

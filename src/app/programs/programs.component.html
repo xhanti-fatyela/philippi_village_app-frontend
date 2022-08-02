@@ -1,0 +1,27 @@
+<div class="container" *ngIf="programs; else error">
+    <a routerLink="/home" class="d-block d-sm-none d-md-none d-lg-none"><img src="/assets/images/backImage-removebg-preview.png" alt="" class="backImage"></a>
+
+    <h3 class="text-big" style="text-align: center;">Programs</h3>
+    
+    
+    <div class="card d-flex justify-content-center mb-3" *ngFor="let program of programs; let i = index">
+        <div class="row g-0">
+          <div class="col-md-4 col-6 image">
+            <img src="{{program.picture}}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8 col-6">
+            <div class="card-body col-12" >
+              <h5 class="card-title" style="display: flex; overflow:hidden; height:28px">{{program.title}}</h5>
+              <p class="card-text" *ngIf="program.description">{{program.description}}</p>
+              <button style="margin: 10px;"><span><a routerLink="/detail/{{program.id}}">Details</a></span></button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<ng-template #error>
+  <div>
+    <h3 class="text-danger">PLEASE MAKE SURE YOU LOGGED IN</h3>
+  </div>
+</ng-template>
