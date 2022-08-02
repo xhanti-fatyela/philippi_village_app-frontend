@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-const API_URL = 'http://localhost:3200/api/test/';
+const API_URL = 'https://oppconnect.herokuapp.com/api/test/';
 
 let token = window.sessionStorage.getItem('auth-token')
 
