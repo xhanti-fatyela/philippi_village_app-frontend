@@ -11,7 +11,7 @@ import { TokenStorageService } from '../_services/token-storage.service';
   constructor(private token: TokenStorageService) { }
   ngOnInit(): void {
     if(!window.sessionStorage.getItem('auth-token')){
-      alert("Please sign in or Login or Register")
+      // alert("Please sign in or Login or Register")
       return window.location.replace('/home')
     }
     this.currentUser = this.token.getUser();
