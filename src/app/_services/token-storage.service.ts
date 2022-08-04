@@ -13,8 +13,10 @@ const USER_KEY = 'auth-user';
     window.sessionStorage.removeItem(TOKEN_KEY);
     window.sessionStorage.setItem(TOKEN_KEY, token);
   }
-  public getToken(): string | null {
+  public getToken(){
+  
     return window.sessionStorage.getItem(TOKEN_KEY);
+    
   }
   public saveUser(user: any): void {
     window.sessionStorage.removeItem(USER_KEY);

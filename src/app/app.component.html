@@ -15,29 +15,29 @@
 
       <div class="navbar-collapse collapse" id="navbarsExample03" style="">
         <ul class="navbar-nav ms-auto mb-2 mb-sm-0">
-          <li class="nav-item">
-            <a class="nav-link active" routerLink="/home" aria-current="page">Home</a>
+          <li class="nav-item" style="padding-bottom: 5px;">
+            <a class="nav-link active" routerLink="/home" aria-current="page" style="font-size: 13px;">Home</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" routerLink="/profile"  aria-current="page">Profile</a>
+            <a class="nav-link active" routerLink="/profile"  aria-current="page" style="font-size: 13px;">Profile</a>
           </li>
           
           <li class="nav-item">
-            <a class="nav-link active" routerLink="/login" aria-current="page" >Login</a>
+            <a class="nav-link active" routerLink="/login" aria-current="page" style="font-size: 13px;">Login</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" routerLink="/register" aria-current="page">Register</a>
+            <a class="nav-link active" routerLink="/register" aria-current="page" style="font-size: 13px;">Register</a>
           </li>
 
           <li class="nav-item" *ngIf="admin == 'ROLE_ADMIN'">
-            <a class="nav-link active" routerLink="admin" aria-current="page">Admin</a>
+            <a class="nav-link active" routerLink="admin" aria-current="page" style="font-size: 13px;">Admin</a>
           </li>
 
           
           <li class="nav-item">
-            <a class="nav-link active" (click)="logout()" routerLink="admin" aria-current="page" style="cursor: pointer;">Logout</a>
+            <a class="nav-link active" (click)="logout()" routerLink="admin" aria-current="page" style="cursor: pointer; font-size: 13px;">Logout</a>
           </li>
 
           
