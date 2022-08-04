@@ -25,5 +25,9 @@ export class DetailsComponent implements OnInit {
         console.log(this.program)
       })
   }
+   
+  move(link: any): void {
 
+    window.location.replace(`${link}`)
+  }
 }
